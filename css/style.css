@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #E5E5E5;
+}
+
+header {
+    background-color: #CF2B2B;
+    height: 92px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+h1 {
+    font-size: 44px;
+    line-height: 55px;
+    color: white;
+    font-weight: 400;
+    letter-spacing: -1.2%;
+    font-family: 'Righteous', cursive;
+}
+
+h2 {
+    font-size: 18px;
+    color: white;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+.content-container,
+.category-container,
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    
+}
+
+.category-container > h1 {
+    color: #333333;
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: 1.8%;
+    height: 25px;
+}
+
+.content-container {
+    margin: 92px 0;
+}
+
+.options-container {
+    display: flex;
+    overflow: hidden;
+}
+
+.option {
+    width: 172px;
+    height: 216px;
+    border-radius: 9px;
+    background-color: white;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    padding: 10% 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.option img {
+    width: 144px;
+    height: 87px;
+    border-radius: 4px;
+}
+
+.option h1 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;
+}
+
+.option h2 {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    color: #A6A6A6;
+}
+
+.option h3 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: black;
+}
+
+footer {
+    height: 92px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+footer > button {
+    height: 61px;
+    width: 364px;
+    background-color: #CBCBCB;
+    border-radius: 50px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    line-height: 23px;
+    letter-spacing: 1.8%;
+}
