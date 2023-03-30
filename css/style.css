@@ -33,14 +33,9 @@ h2 {
 }
 
 .content-container,
-.category-container,
-.container {
+.category-container {
     display: flex;
     flex-direction: column;
-}
-
-.container {
-    
 }
 
 .category-container > h1 {
@@ -57,7 +52,8 @@ h2 {
 
 .options-container {
     display: flex;
-    overflow: hidden;
+    overflow-x: scroll;
+    padding: 10px 0;
 }
 
 .option {
@@ -66,9 +62,23 @@ h2 {
     border-radius: 9px;
     background-color: white;
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
-    padding: 10% 8%;
+    padding: 13px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.option .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 216px;
+}
+
+.bottom-info {
+    display: flex;
     justify-content: space-between;
 }
 
@@ -122,4 +132,24 @@ footer > button {
     border: none;
     line-height: 23px;
     letter-spacing: 1.8%;
+}
+
+ion-icon {
+    color: #32B72F;
+    font-size: 19px;
+    display: none;
+}
+
+.selected {
+    border: 5px solid #32B72F;
+}
+
+.selected ion-icon {
+    display: initial;
+}
+
+.close-order {
+    background-color: #32B72F;
+    font-weight: 700;
+    cursor: pointer;
 }
